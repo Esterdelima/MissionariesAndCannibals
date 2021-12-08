@@ -17,6 +17,6 @@ class Solution():
                     self.resolution.insert(0, element.nodeHead)
                     element = element.nodeHead
                 break;
-            # Caso o element não seja a solução, gera seus nodeNext e os adiciona na fila de execução
+            
             element.newNode()
             self.queue.extend(element.nodeNext)
